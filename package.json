@@ -1,0 +1,16 @@
+{
+  "name": "notes-taking-app",
+  "version": "1.0.0",
+  "description": "this is my first project app backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Karn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2"
+  }
+}
