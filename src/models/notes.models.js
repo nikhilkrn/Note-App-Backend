@@ -1,20 +1,26 @@
-const mongoose = require('mongoose')
-const connectDB = require('../db/index.js')
+import mongoose from 'mongoose'
 
-connectDB()
-// const schema = mongoose.Schema()
+
 
 const NoteSchema = new mongoose.Schema({
-    title : String,
-    description: String,
-    CreatedAt : String,
-    updatedAt: String,
+    title : {
+        type:String,
+        required: true,
+        index: true,
+    },
+    description: {
+        type:String,
+        required: true,
+    },
     createdBy: {
+        index:true,
         type : mongoose.Schema.Types.String,
         ref: "Users",
     }
+},{
+    timestamps:true
 })
 
 const Note = mongoose.model('Notes', NoteSchema)
 
-module.exports = { Note }
+export { Note }
