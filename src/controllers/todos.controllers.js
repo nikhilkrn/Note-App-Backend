@@ -104,10 +104,11 @@ const GetNote = asyncHandler(async (req, res) => {
 
 const DeleteNote = asyncHandler(async (req, res) => {
     const {title, _id} = req.body;
-
+    const username = req.user.username
     const toDelete = await Note.findOne({
         title: title,
-        _id: _id
+        _id: _id,
+        createdBy:username
     })
 
     if (toDelete) {
