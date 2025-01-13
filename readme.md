@@ -1,17 +1,5 @@
 # Javascript Note App
 
----
-
-title: Note App
-language_tabs:
-
-- shell: Shell
-- http: HTTP
-- javascript: JavaScript
-
----
-
-<br>
 A note app made in Javascript using express-js as http server and mongodb as database. Api routes are live feel free to try out.
 <br>
 
@@ -23,7 +11,6 @@ to get this repository, run this command in your terminal
 
 ```bash
 $git clone https://github.com/nikhilkrn/Note-App-Backend.git
-
 ```
 
 to run this you will node js installed in your system. you can download it from [https://nodejs.org/en/download](https://nodejs.org/en/download)
